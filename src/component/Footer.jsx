@@ -49,9 +49,21 @@ const Footer = () => {
               </svg>
             </a>
             <div className="flex flex-row justify-between items-center">
-              <p className="text-lg text-gray-500 font-semibold">
+              <div className="flex flex-col justify-between items-center">
+
+              {/* <p className="text-lg text-gray-500 font-semibold">
                 Match the Ideal AI model for any prompt
+              </p> */}
+              <p className="text-lg text-gray-500 font-semibold">
+                ASVA AI <br/> 
+
+                BHIVE Premium HSR Campus <br/> 
+
+                B-Block, No.112, AKR Tech Park, "A" <br/> 
+                7th Mile Hosur Rd,  <br/> 
+                Bengaluru, Karnataka 560068 
               </p>
+              </div>
               <div className="flex flex-row justify-between items-center gap-x-3">
                 <a
                   href="#"
@@ -159,6 +171,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+            
           </div>
         </>
         <div className="container bg-white py-10 ">
@@ -212,13 +225,13 @@ const Footer = () => {
           </div>
           <div className="flex flex-row space-x-10 border-t border-t-gray-400 py-5  justify-between text-gray-300 font-semibold md:text-lg text-sm mx-auto items-center">
             <p className="text-gray-600">
-              &copy; 2024 Asva Al. All Rights Reserved
+              &copy; 2024 RAPIDBIZZ TECHNOLOGIES PRIVATE LIMITED.
             </p>
             <div className="flex items-center">
-              <a href="#" className="text-gray-600 hover:text-blue-500 mr-4">
+              <a href="https://policy.asvaai.com/" className="text-gray-600 hover:text-blue-500 mr-4">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-500 mr-4">
+              <a href="https://tnc.asvaai.com/" className="text-gray-600 hover:text-blue-500 mr-4">
                 Terms and condition
               </a>
               <button className="md:relative md:flex hidden">
