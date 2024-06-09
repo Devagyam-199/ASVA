@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import img1 from "./Images/PAge1main.jpeg";
+import img1 from "./Images/animate.png";
 import graphimg from "./Images/statisticgrap.png";
 import RadarChart from "./RadarChart";
+import LottieAnimation from './LottieAnimation';
 
 const Home = () => {
   const [isExpanded1, setIsExpanded1] = useState(false);
@@ -595,7 +596,14 @@ const Home = () => {
           Prepare to test the most accurate resume parsing program ever
           developed - the NextGen Resume Parser.
         </p>
-        <img className="md:w-1/2 lg:h-4/5 lg:w-1/2 w-4/5  mx-10" src={img1} alt="image" />
+        <div className=" flex justify-center items-center ">
+          <div className="lg:h-1/3  mx-10">
+            <LottieAnimation />
+          </div>
+          <div className="lg:h-1/3">
+          <img src={img1} alt="" />
+          </div>
+        </div>
         <button className="bg-purple-700 text-white font-medium rounded-lg px-6 py-4">
           Test Your Resume Now
         </button>
@@ -613,11 +621,11 @@ const Home = () => {
         <div className="md:ml-10 mx-10 flex flex-col md:flex-row gap-8">
           <div className="flex justify-center flex-col w-full md:w-1/2">
             <div className="w-full flex justify-center flex-col items-center h-full rounded-lg">
-            <h1 className="text-2xl flex items-start justify-center font-medium pb-3">Accuracy Across Key Fields</h1>
-            <div className="w-full flex flex-col justify-center items-center h-full">
-              <RadarChart />
-              <img src={graphimg} alt="" />
-            </div>
+              <h1 className="text-2xl flex items-start justify-center font-medium pb-3">Accuracy Across Key Fields</h1>
+              <div className="w-full flex flex-col justify-center items-center h-full">
+                <RadarChart />
+                <img src={graphimg} alt="" />
+              </div>
             </div>
           </div>
           <div className="md:mr-10 flex flex-col items-start justify-between w-full md:w-1/2 gap-y-5">
@@ -660,12 +668,12 @@ const Home = () => {
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
               </div>
-                <>
-                  <div className="my-2 flex ml-10 dropdown relative mx-2 text-gray-500">
-                    Unleash the power of a parser that understands your industry
-                    jargons and is customisable to your business's unique needs.
-                  </div>
-                </>
+              <>
+                <div className="my-2 flex ml-10 dropdown relative mx-2 text-gray-500">
+                  Unleash the power of a parser that understands your industry
+                  jargons and is customisable to your business's unique needs.
+                </div>
+              </>
             </div>
             <div
               className={`rounded-lg  shadow-md py-6 px-3 menu relative cursor-pointer w-full transition-all duration-150`}
@@ -710,13 +718,13 @@ const Home = () => {
                 </svg>
               </div>
               <>
-                  <div className="my-2 ml-10 dropdown mx-2 relative text-gray-500">
-                    Leverage the advantage of a parser that provides
-                    comprehensive data coverage, ensuring no detail is missed
-                    and offering deep insights tailored to your specific
-                    industry needs.
-                  </div>
-                </>
+                <div className="my-2 ml-10 dropdown mx-2 relative text-gray-500">
+                  Leverage the advantage of a parser that provides
+                  comprehensive data coverage, ensuring no detail is missed
+                  and offering deep insights tailored to your specific
+                  industry needs.
+                </div>
+              </>
             </div>
             <div
               className={`rounded-lg menu relative shadow-md py-6 px-3 cursor-pointer w-full transition-all duration-150`}
@@ -757,13 +765,13 @@ const Home = () => {
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
               </div>
-                <>
-                  <div className="my-2 ml-10 dropdown relative mx-2 text-gray-500">
-                    Experience seamless integration with Applicant Tracking
-                    Systems (ATS), optimizing your recruitment process by
-                    ensuring smooth data flow and improved candidate matching.
-                  </div>
-                </>
+              <>
+                <div className="my-2 ml-10 dropdown relative mx-2 text-gray-500">
+                  Experience seamless integration with Applicant Tracking
+                  Systems (ATS), optimizing your recruitment process by
+                  ensuring smooth data flow and improved candidate matching.
+                </div>
+              </>
             </div>
             <div
               className={`rounded-lg menu shadow-md py-6 px-3 relative cursor-pointer w-full transition-all duration-150`}
@@ -804,14 +812,14 @@ const Home = () => {
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
               </div>
-                <>
-                  <div className="my-2 relative dropdown text-left mx-2 ml-10 text-gray-500">
-                    Empower your HR SaaS platform with a parser designed to
-                    enhance functionality, providing robust data parsing
-                    capabilities that cater to the evolving demands of human
-                    resources technology.
-                  </div>
-                </>
+              <>
+                <div className="my-2 relative dropdown text-left mx-2 ml-10 text-gray-500">
+                  Empower your HR SaaS platform with a parser designed to
+                  enhance functionality, providing robust data parsing
+                  capabilities that cater to the evolving demands of human
+                  resources technology.
+                </div>
+              </>
             </div>
           </div>
         </div>
@@ -845,9 +853,8 @@ const Home = () => {
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center">
                     <span
-                      className={`mr-2 ${
-                        feature.active ? "text-green-500" : "text-gray-500"
-                      }`}
+                      className={`mr-2 ${feature.active ? "text-green-500" : "text-gray-500"
+                        }`}
                     >
                       {feature.icon}
                     </span>
@@ -887,9 +894,8 @@ const Home = () => {
               {slides.map((slide, index) => (
                 <div
                   key={index}
-                  className={`rounded-lg shadow-md p-6 ${
-                    index === currentSlide ? "bg-white-100" : ""
-                  }`}
+                  className={`rounded-lg shadow-md p-6 ${index === currentSlide ? "bg-white-100" : ""
+                    }`}
                 >
                   <div className=" flex items-center mb-4">
                     <div className="border-4 flex items-center justify-center border-gray-400 rounded-full mr-3">
