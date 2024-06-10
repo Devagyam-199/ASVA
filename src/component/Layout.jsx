@@ -8,7 +8,7 @@ import { Outlet } from 'react-router-dom'
 const Layout = () => {
   return (
     <>
-    <Navbar />
+    <Navbar_copy />
     <Outlet />
     <Footer />
 

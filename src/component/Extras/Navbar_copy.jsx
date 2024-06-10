@@ -55,22 +55,22 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden text-md text-gray-400 font-medium -ml-10 md:flex space-x-10">
-          <NavLink to="/platform" className={({isActive})=>`hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/platform" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
             Platform
           </NavLink>
           <NavLink to="/solution" className={({isActive})=>`hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
             Solution
           </NavLink>
-          <NavLink to="/pricing" className={({isActive})=>`hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/pricing" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
             Pricing
           </NavLink>
-          <NavLink to="/blog" className={({isActive})=>`hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/blog" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
             Blog
           </NavLink>
-          <NavLink to="/company" className={({isActive})=>`hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/company" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
             Company
           </NavLink>
-          <NavLink to="/contact_us" className={({isActive})=>`hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/contact_us" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
             Contact Us
           </NavLink>
         </div>
@@ -109,22 +109,22 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg px-4 py-3">
           <div className="flex flex-col justify-center items-center space-y-4">
-            <NavLink to="/platform" className={({isActive})=>`hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/platform" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
               Platform
             </NavLink>
             <NavLink to="/solution" className={({isActive})=>`hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
               Solution
             </NavLink>
-            <NavLink to="/pricing" className={({isActive})=>`hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/pricing" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
               Pricing
             </NavLink>
-            <NavLink to="/blog" className={({isActive})=>`hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/blog" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
               Blog
             </NavLink>
-            <NavLink to="/company" className={({isActive})=>`hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/company" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
               Company
             </NavLink>
-            <NavLink to="/contact_us" className={({isActive})=>`hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/contact_us" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
               Contact Us
             </NavLink>
           </div>
