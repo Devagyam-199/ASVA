@@ -54,36 +54,36 @@ const Navbar = () => {
             </svg>
           </Link>
         </div>
-        <div className="hidden text-md text-gray-400 font-medium -ml-10 md:flex space-x-10">
-          <NavLink to="/platform" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+        <div className="hidden text-lg text-gray-400 font-medium md:-ml-20 md:flex space-x-10">
+          <NavLink to="/platform" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Platform
           </NavLink>
-          <NavLink to="/solution" className={({isActive})=>`hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Solution
           </NavLink>
-          <NavLink to="/pricing" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/pricing" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Pricing
           </NavLink>
-          <NavLink to="/blog" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/blog" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Blog
           </NavLink>
-          <NavLink to="/company" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/company" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Company
           </NavLink>
-          <NavLink to="/contact_us" className={({isActive})=>`hidden hover:border-b-4 hover:font-semibold ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg hover:border-b-purple-700  hover:rounded-b-md hover:shadow-xl transition-all duration-150`}>
+          <NavLink to="/contact_us" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Contact Us
           </NavLink>
         </div>
         <div className="hidden md:flex md:justify-center md:items-center space-x-4">
           <Link
             to="#"
-            className="md:flex md:justify-center md:items-center hover:bg-purple-700 hover:text-white text-purple-500 border-2 border-purple-700 h-10 font-medium py-2 px-8 rounded-md transition-all duration-150"
+            className="md:flex md:justify-center md:items-center hover:bg-violet-700 hover:text-white text-violet-300 border border-violet-700 h-10 font-medium py-6 px-8 rounded-md transition-all duration-150"
           >
             Login
           </Link>
           <Link
             to="#"
-            className="md:flex md:justify-center md:items-center bg-purple-700 hover:bg-purple-500 text-white font-medium py-2 h-10 px-8 rounded-md transition-all duration-150"
+            className="md:flex md:justify-center md:items-center bg-violet-700 hover:bg-violet-500 text-white font-medium py-6 h-10 px-8 rounded-md transition-all duration-150"
           >
             Signup
           </Link>
@@ -109,35 +109,35 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg px-4 py-3">
           <div className="flex flex-col justify-center items-center space-y-4">
-            <NavLink to="/platform" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/platform" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Platform
             </NavLink>
-            <NavLink to="/solution" className={({isActive})=>`hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Solution
             </NavLink>
-            <NavLink to="/pricing" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/pricing" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Pricing
             </NavLink>
-            <NavLink to="/blog" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/blog" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Blog
             </NavLink>
-            <NavLink to="/company" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/company" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Company
             </NavLink>
-            <NavLink to="/contact_us" className={({isActive})=>`hidden hover:border-b-4 hover:border-b-purple-700 hover:rounded-b-md ${isActive ? "border-b-4 rounded-b-md border-b-purple-700" : "text-gray-400" } hover:shadow-xl transition-all duration-150`}>
+            <NavLink to="/contact_us" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Contact Us
             </NavLink>
           </div>
           <div className="flex flex-col space-y-4 mt-5 justify-center items-center">
             <Link
               to="#"
-              className="flex justify-center items-center hover:bg-purple-700 hover:text-white text-purple-500 border-2 border-purple-700 h-10 font-medium py-2 px-8 rounded-md transition-all duration-150"
+              className="flex justify-center items-center hover:bg-violet-700 hover:text-white text-violet-500 border-2 border-violet-700 h-10 font-medium py-2 px-8 rounded-md transition-all duration-150"
             >
               Login
             </Link>
             <Link
               to="#"
-              className="flex justify-center items-center bg-purple-700 hover:bg-purple-500 text-white font-medium py-2 h-10 px-8 rounded-md transition-all duration-"
+              className="flex justify-center items-center bg-violet-700 hover:bg-violet-500 text-white font-medium py-2 h-10 px-8 rounded-md transition-all duration-"
             >
               Signup
             </Link>

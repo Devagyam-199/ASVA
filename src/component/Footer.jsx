@@ -3,14 +3,118 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="container sticky mx-auto mt-10 bg-white">
-      <div className=" mx-auto px-4">
+      <div className=" mx-auto px-5">
         <>
-          <div className=" flex flex-col space-y-5 pb-3">
-            <a href="/" className="text-xl my-1 mx-1 select-none font-bold">
+          <div className="container mx-auto pb-16">
+            <div className="bg-gradient-to-r from-gray-50 via-violet-100 to-violet-200 px-4 py-7 h-auto mb-10 rounded-md flex flex-col items-center justify-center">
+              <div className="flex flex-col justify-center items-center w-full gap-y-8">
+                <h1 className="font-semibold text-5xl text-center mb-4">
+                  Get started your project!
+                </h1>
+                <p className="font-medium text-xl text-gray-600 text-center mb-8">
+                  We will help you grow towards your archivements
+                </p>
+              </div>
+              <div className="flex justify-start md:flex-row flex-col items-center md:mx-20 mx-10 mt-10 mb-10 gap-6">
+                <button className="bg-violet-700 border-violet-700 border hover:shadow-gray-400 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200  hover:shadow-lg flex space-x-3 justify-center items-center text-white font-semibold py-3 px-6 rounded-md transition-all duration-150">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.0394 2.10195C18.0328 2.06989 18.0171 2.04039 17.9943 2.01694C17.9715 1.99348 17.9424 1.97703 17.9105 1.96952C15.7863 1.44999 10.8793 3.30116 8.21795 5.96054C7.74366 6.43097 7.31117 6.94174 6.92537 7.4871C6.10506 7.41288 5.28475 7.47538 4.58631 7.78007C2.61405 8.64726 2.04022 10.9121 1.88006 11.8844C1.87138 11.9376 1.87509 11.9922 1.89089 12.0438C1.9067 12.0954 1.93417 12.1427 1.97119 12.182C2.0082 12.2213 2.05377 12.2515 2.10435 12.2703C2.15494 12.2892 2.20918 12.2961 2.26287 12.2906L5.42967 11.943C5.43184 12.1818 5.44618 12.4204 5.47264 12.6578C5.48917 12.8219 5.56238 12.9751 5.67967 13.091L6.90584 14.3172C7.02187 14.4346 7.17521 14.5078 7.33944 14.5242C7.57541 14.5505 7.81256 14.5649 8.04998 14.5672L7.70272 17.7312C7.6973 17.7849 7.70428 17.839 7.72312 17.8895C7.74197 17.94 7.77217 17.9855 7.8114 18.0225C7.85063 18.0594 7.89783 18.0869 7.94936 18.1027C8.00089 18.1185 8.05537 18.1223 8.10858 18.1137C9.08123 17.9574 11.3508 17.3836 12.2129 15.4117C12.5176 14.7125 12.5801 13.8965 12.5097 13.0801C13.0567 12.6946 13.569 12.2621 14.0406 11.7875C16.7117 9.13124 18.5512 4.33202 18.0394 2.10195ZM11.6664 8.34648C11.4331 8.11322 11.2742 7.81602 11.2098 7.49246C11.1454 7.16889 11.1784 6.8335 11.3046 6.52869C11.4309 6.22389 11.6447 5.96337 11.919 5.78007C12.1933 5.59678 12.5158 5.49894 12.8457 5.49894C13.1756 5.49894 13.4981 5.59678 13.7724 5.78007C14.0467 5.96337 14.2605 6.22389 14.3867 6.52869C14.513 6.8335 14.546 7.16889 14.4816 7.49246C14.4172 7.81602 14.2583 8.11322 14.025 8.34648C13.8702 8.50155 13.6864 8.62459 13.4841 8.70853C13.2817 8.79248 13.0648 8.83569 12.8457 8.83569C12.6266 8.83569 12.4097 8.79248 12.2073 8.70853C12.005 8.62459 11.8211 8.50155 11.6664 8.34648Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4.28281 13.75C3.8934 13.7978 3.53113 13.9743 3.25352 14.2516C2.56523 14.9422 2.5 17.5 2.5 17.5C2.5 17.5 5.05937 17.4348 5.74805 16.7457C6.0264 16.4685 6.20323 16.1056 6.25 15.7156" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                  <p>Try ASVA AI</p>
+                </button>
+                <a href="https://calendly.com/v-inaniyan12/30min">
+                  <button className="border-violet-700 border hover:shadow-lg hover:shadow-gray-400 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200 bg-white hover:bg-violet-500 hover:text-white font-semibold flex justify-center transition-all duration-150 items-center text-violet-700 py-3 px-6 rounded-md">
+                    Book Free Consultation
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 fill-gray-700 text-gray-600 md:grid-cols-3 gap-y-5 gap-x-14">
+              <div className="bg-gray-100 select-none flex justify-center items-center rounded-lg shadow-md px-6 py-3">
+                <div className="flex items-center justify-center">
+                  <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.7022 16.7239L22.7878 14.1891C22.2847 13.9735 21.7153 13.9735 21.2122 14.1891L15.2978 16.7239C14.4785 17.075 13.9905 17.9258 14.1011 18.8102L14.714 23.7141C14.9342 25.4753 15.8152 27.0871 17.1787 28.2234L20.7196 31.1742C21.4613 31.7923 22.5387 31.7923 23.2804 31.1742L26.8213 28.2234C28.1848 27.0871 29.0658 25.4753 29.286 23.7141L29.8989 18.8102C30.0095 17.9258 29.5215 17.075 28.7022 16.7239Z" stroke="url(#paint0_linear_73_2093)" stroke-width="2" stroke-linecap="round" />
+                    <path d="M19 22.9395L21.5687 25.5082C21.7918 25.7313 22.1633 25.6945 22.3383 25.432L26 19.9395" stroke="url(#paint1_linear_73_2093)" stroke-width="2" stroke-linecap="round" />
+                    <defs>
+                      <linearGradient id="paint0_linear_73_2093" x1="18.3415" y1="14.9395" x2="31.8423" y2="18.0932" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_73_2093" x1="26" y1="21.3715" x2="24.6732" y2="27.1697" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <h2 className="text-lg font-semibold">Advanced Security</h2>
+                </div>
+              </div>
+              <div className="bg-gray-100 select-none  flex justify-center items-center rounded-lg shadow-md px-6 py-3">
+                <div className="flex fill-violet-700 items-center">
+                  <svg width="45" height="45" viewBox="0 1 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.333 22.9395C14.333 18.5212 17.9147 14.9395 22.333 14.9395V14.9395C26.7513 14.9395 30.333 18.5212 30.333 22.9395V28.0304C30.333 28.877 30.333 29.3003 30.2069 29.6384C30.0042 30.1819 29.5755 30.6106 29.0319 30.8134C28.6938 30.9395 28.2705 30.9395 27.4239 30.9395H22.333C17.9147 30.9395 14.333 27.3577 14.333 22.9395V22.9395Z" stroke="url(#paint0_linear_73_2086)" stroke-width="2" />
+                    <path d="M19.333 21.9395L25.333 21.9395" stroke="url(#paint1_linear_73_2086)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22.333 25.9395H25.333" stroke="url(#paint2_linear_73_2086)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <defs>
+                      <linearGradient id="paint0_linear_73_2086" x1="18.1518" y1="14.9395" x2="33.3408" y2="18.9944" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_73_2086" x1="20.7651" y1="21.9395" x2="22.4763" y2="24.6805" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                      <linearGradient id="paint2_linear_73_2086" x1="23.049" y1="25.9395" x2="24.9077" y2="27.4281" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <h2 className="text-lg font-semibold">24/7 Support</h2>
+                </div>
+              </div>
+              <div className="bg-gray-100 fill-purple-700 select-none  flex justify-center items-center rounded-lg shadow-md px-6 py-3">
+                <div className="flex items-center">
+                  <svg width="45" height="45" viewBox="0 2 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15.166" y="14.9395" width="14" height="17" rx="2" stroke="url(#paint0_linear_73_2099)" stroke-width="2" />
+                    <path d="M19.166 19.9395H25.166" stroke="url(#paint1_linear_73_2099)" stroke-width="2" stroke-linecap="round" />
+                    <path d="M19.166 23.9395H25.166" stroke="url(#paint2_linear_73_2099)" stroke-width="2" stroke-linecap="round" />
+                    <path d="M19.166 27.9395H23.166" stroke="url(#paint3_linear_73_2099)" stroke-width="2" stroke-linecap="round" />
+                    <defs>
+                      <linearGradient id="paint0_linear_73_2099" x1="18.5075" y1="14.9395" x2="32.0886" y2="17.9253" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_73_2099" x1="20.5981" y1="19.9395" x2="22.3093" y2="22.6805" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                      <linearGradient id="paint2_linear_73_2099" x1="20.5981" y1="23.9395" x2="22.3093" y2="26.6805" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                      <linearGradient id="paint3_linear_73_2099" x1="20.1207" y1="27.9395" x2="22.0213" y2="29.969" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <h2 className="text-lg font-semibold">More than 1000+ models</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" flex mx-auto flex-col space-y-5 pb-3">
+            <a href="/" className="text-xl md:ml-28 ml-24 mx-1 flex justify-center select-none font-bold">
               <svg
                 className="cursor-pointer"
-                width="198"
-                height="45"
+                width="298"
+                height="60"
                 viewBox="0 50 550 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,134 +152,90 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <div className="flex flex-row justify-between items-center">
-              <div className="flex flex-col justify-between items-center">
+            <div className="flex md:flex-row flex-col justify-between">
+              <div className="text-start mb-7">
 
-              {/* <p className="text-lg text-gray-500 font-semibold">
+                {/* <p className="text-lg text-gray-500 font-semibold">
                 Match the Ideal AI model for any prompt
               </p> */}
-              <p className="text-lg text-gray-500 font-semibold">
-                ASVA AI <br/> 
+                <p className="md:text-lg text-gray-500 text-xs  font-semibold">
+                  ASVA AI <br />
 
-                BHIVE Premium HSR Campus <br/> 
+                  BHIVE Premium HSR Campus <br />
 
-                B-Block, No.112, AKR Tech Park, "A" <br/> 
-                7th Mile Hosur Rd,  <br/> 
-                Bengaluru, Karnataka 560068 
-              </p>
+                  B-Block, No.112, AKR Tech Park, "A" <br />
+                  7th Mile Hosur Rd,  <br />
+                  Bengaluru, Karnataka 560068
+                </p>
               </div>
-              <div className="flex flex-row justify-between items-center gap-x-3">
+              <div className="flex flex-row md:justify-between justify-center items-center gap-x-3">
                 <a
                   href="#"
-                  className=" flex justify-center items-center fill-purple-700 hover:bg-gray-100 hover:fill-purple-500 transition-all duration-150 px-4 bg-gray-300 py-3 rounded-xl "
+                  className=" flex justify-center items-center fill-violet-700 hover:bg-gray-50 hover:fill-violet-500 transition-all duration-150 px-3 bg-gray-100 py-3 rounded-xl "
                 >
-                  <svg
-                    width="25px"
-                    height="25px"
-                    fill="inherit"
-                    viewBox="0 -28.5 256 256"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    preserveAspectRatio="xMidYMid"
-                  >
-                    <g>
-                      <path
-                        d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
-                        fill="inherit"
-                        fill-rule="nonzero"
-                      ></path>
-                    </g>
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2701 5.39059C17.9401 4.77059 16.5001 4.32059 15.0001 4.06059C14.987 4.06017 14.9739 4.06264 14.9618 4.06782C14.9497 4.07301 14.9389 4.08078 14.9301 4.09059C14.7501 4.42059 14.5401 4.85059 14.4001 5.18059C12.8091 4.94059 11.1911 4.94059 9.60012 5.18059C9.46012 4.84059 9.25012 4.42059 9.06012 4.09059C9.05012 4.07059 9.02012 4.06059 8.99012 4.06059C7.49012 4.32059 6.06012 4.77059 4.72012 5.39059C4.71012 5.39059 4.70012 5.40059 4.69012 5.41059C1.97012 9.48059 1.22012 13.4406 1.59012 17.3606C1.59012 17.3806 1.60012 17.4006 1.62012 17.4106C3.42012 18.7306 5.15012 19.5306 6.86012 20.0606C6.89012 20.0706 6.92012 20.0606 6.93012 20.0406C7.33012 19.4906 7.69012 18.9106 8.00012 18.3006C8.02012 18.2606 8.00012 18.2206 7.96012 18.2106C7.39012 17.9906 6.85012 17.7306 6.32012 17.4306C6.28012 17.4106 6.28012 17.3506 6.31012 17.3206C6.42012 17.2406 6.53012 17.1506 6.64012 17.0706C6.66012 17.0506 6.69012 17.0506 6.71012 17.0606C10.1501 18.6306 13.8601 18.6306 17.2601 17.0606C17.2801 17.0506 17.3101 17.0506 17.3301 17.0706C17.4401 17.1606 17.5501 17.2406 17.6601 17.3306C17.7001 17.3606 17.7001 17.4206 17.6501 17.4406C17.1301 17.7506 16.5801 18.0006 16.0101 18.2206C15.9701 18.2306 15.9601 18.2806 15.9701 18.3106C16.2901 18.9206 16.6501 19.5006 17.0401 20.0506C17.0701 20.0606 17.1001 20.0706 17.1301 20.0606C18.8501 19.5306 20.5801 18.7306 22.3801 17.4106C22.4001 17.4006 22.4101 17.3806 22.4101 17.3606C22.8501 12.8306 21.6801 8.90059 19.3101 5.41059C19.3001 5.40059 19.2901 5.39059 19.2701 5.39059ZM8.52012 14.9706C7.49012 14.9706 6.63012 14.0206 6.63012 12.8506C6.63012 11.6806 7.47012 10.7306 8.52012 10.7306C9.58012 10.7306 10.4201 11.6906 10.4101 12.8506C10.4101 14.0206 9.57012 14.9706 8.52012 14.9706ZM15.4901 14.9706C14.4601 14.9706 13.6001 14.0206 13.6001 12.8506C13.6001 11.6806 14.4401 10.7306 15.4901 10.7306C16.5501 10.7306 17.3901 11.6906 17.3801 12.8506C17.3801 14.0206 16.5501 14.9706 15.4901 14.9706Z" fill="url(#paint0_linear_73_2120)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_73_2120" x1="6.51404" y1="4.06055" x2="25.5357" y2="10.7237" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                    </defs>
                   </svg>
+
                 </a>
                 <a
                   href="https://x.com/ai_asva"
-                  className=" flex justify-center items-center fill-purple-700 hover:bg-gray-100 hover:fill-purple-500 transition-all duration-150 px-4 bg-gray-300 py-3 rounded-xl "
+                  className=" flex justify-center items-center fill-violet-700 hover:bg-gray-50 hover:fill-violet-500 transition-all duration-150 px-3 bg-gray-100 py-3 rounded-xl "
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25px"
-                    height="25px"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    fill="inherit"
-                    image-rendering="optimizeQuality"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    viewBox="0 0 512 462.799"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"
-                    />
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.751 3.06055H20.818L14.118 10.6855L22 21.0605H15.828L10.995 14.7675L5.464 21.0605H2.394L9.561 12.9055L2 3.06055H8.328L12.698 8.81255L17.751 3.06055ZM16.675 19.2325H18.375L7.404 4.79255H5.58L16.675 19.2325Z" fill="url(#paint0_linear_73_2124)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_73_2124" x1="6.77355" y1="3.06055" x2="25.468" y2="8.60583" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                    </defs>
                   </svg>
+
                 </a>
                 <a
                   href=" https://www.youtube.com/@ASVA_AI"
-                  className=" flex justify-center items-center fill-purple-700 hover:bg-gray-100 hover:fill-purple-500 transition-all duration-150 px-4 bg-gray-300 py-3 rounded-xl "
+                  className=" flex justify-center items-center fill-violet-700 hover:bg-gray-50 hover:fill-violet-500 transition-all duration-150 px-3 bg-gray-100 py-3 rounded-xl "
                 >
-                  <svg
-                    width="25px"
-                    height="25px"
-                    fill="inherit"
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 461.001 461.001"
-                    xml:space="preserve"
-                  >
-                    <g>
-                      <path
-                        fill="inherit"
-                        d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"
-                      />
-                    </g>
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 15.0605L15.19 12.0605L10 9.06055V15.0605ZM21.56 7.23055C21.69 7.70055 21.78 8.33055 21.84 9.13055C21.91 9.93055 21.94 10.6205 21.94 11.2205L22 12.0605C22 14.2505 21.84 15.8605 21.56 16.8905C21.31 17.7905 20.73 18.3705 19.83 18.6205C19.36 18.7505 18.5 18.8405 17.18 18.9005C15.88 18.9705 14.69 19.0005 13.59 19.0005L12 19.0605C7.81 19.0605 5.2 18.9005 4.17 18.6205C3.27 18.3705 2.69 17.7905 2.44 16.8905C2.31 16.4205 2.22 15.7905 2.16 14.9905C2.09 14.1905 2.06 13.5005 2.06 12.9005L2 12.0605C2 9.87055 2.16 8.26055 2.44 7.23055C2.69 6.33055 3.27 5.75055 4.17 5.50055C4.64 5.37055 5.5 5.28055 6.82 5.22055C8.12 5.15055 9.31 5.12055 10.41 5.12055L12 5.06055C16.19 5.06055 18.8 5.22055 19.83 5.50055C20.73 5.75055 21.31 6.33055 21.56 7.23055Z" fill="url(#paint0_linear_73_2128)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_73_2128" x1="6.77355" y1="5.06055" x2="24.5302" y2="11.8325" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                    </defs>
                   </svg>
+
                 </a>
                 <a
                   href="https://www.linkedin.com/company/asva-ai/"
-                  className=" flex justify-center items-center fill-purple-700 hover:bg-gray-100 hover:fill-purple-500 transition-all duration-150 px-4 bg-gray-300 py-3 rounded-xl "
+                  className=" flex justify-center items-center fill-violet-700 hover:bg-gray-50 hover:fill-violet-500 transition-all duration-150 px-3 bg-gray-100 py-3 rounded-xl "
                 >
-                  <svg
-                    width="25px"
-                    height="25px"
-                    fill="inherit"
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 310 310"
-                    xml:space="preserve"
-                  >
-                    <g id="XMLID_801_">
-                      <path
-                        id="XMLID_802_"
-                        d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
-		C77.16,101.969,74.922,99.73,72.16,99.73z"
-                      />
-                      <path
-                        id="XMLID_803_"
-                        d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
-		c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"
-                      />
-                      <path
-                        id="XMLID_804_"
-                        d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
-		c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
-		c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
-		C310,145.43,300.549,94.761,230.454,94.761z"
-                      />
-                    </g>
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 3.06055C19.5304 3.06055 20.0391 3.27126 20.4142 3.64633C20.7893 4.02141 21 4.53011 21 5.06055V19.0605C21 19.591 20.7893 20.0997 20.4142 20.4748C20.0391 20.8498 19.5304 21.0605 19 21.0605H5C4.46957 21.0605 3.96086 20.8498 3.58579 20.4748C3.21071 20.0997 3 19.591 3 19.0605V5.06055C3 4.53011 3.21071 4.02141 3.58579 3.64633C3.96086 3.27126 4.46957 3.06055 5 3.06055H19ZM18.5 18.5605V13.2605C18.5 12.3959 18.1565 11.5667 17.5452 10.9554C16.9338 10.344 16.1046 10.0005 15.24 10.0005C14.39 10.0005 13.4 10.5205 12.92 11.3005V10.1905H10.13V18.5605H12.92V13.6305C12.92 12.8605 13.54 12.2305 14.31 12.2305C14.6813 12.2305 15.0374 12.378 15.2999 12.6406C15.5625 12.9031 15.71 13.2592 15.71 13.6305V18.5605H18.5ZM6.88 8.62055C7.32556 8.62055 7.75288 8.44355 8.06794 8.12849C8.383 7.81343 8.56 7.38611 8.56 6.94055C8.56 6.01055 7.81 5.25055 6.88 5.25055C6.43178 5.25055 6.00193 5.4286 5.68499 5.74554C5.36805 6.06247 5.19 6.49233 5.19 6.94055C5.19 7.87055 5.95 8.62055 6.88 8.62055ZM8.27 18.5605V10.1905H5.5V18.5605H8.27Z" fill="url(#paint0_linear_73_2132)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_73_2132" x1="7.2962" y1="3.06055" x2="24.3837" y2="7.62232" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6322D8" />
+                        <stop offset="1" stop-color="#E0CEFF" />
+                      </linearGradient>
+                    </defs>
                   </svg>
+
                 </a>
               </div>
             </div>
-            
+
           </div>
         </>
         <div className="container bg-white py-10 ">
-          <div className="hidden grid-cols-2 md:grid-cols-6 border-b border-b-gray-200 mx-auto">
+          <div className="grid grid-cols-3 md:grid-cols-6 border-b border-b-gray-200 mx-auto">
             <div className="px-4 w-1/4 mb-6">
               <h3 className="text-lg font-bold mb-4">General</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
@@ -223,11 +283,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-row space-x-10 border-t border-t-gray-400 py-5  justify-between text-gray-300 font-semibold md:text-lg text-sm mx-auto items-center">
-            <p className="text-gray-600">
+          <div className="flex flex-col md:flex-row space-x-10 space-y-5 border-t border-t-gray-400 pt-5 justify-center md:justify-between text-gray-300 font-semibold md:text-lg text-base mx-auto items-center">
+            <p className="text-gray-600 mt-4">
               &copy; 2024 RAPIDBIZZ TECHNOLOGIES PRIVATE LIMITED.
             </p>
-            <div className="flex items-center">
+            <div className="hidden md:flex items-center">
               <a href="https://policy.asvaai.com/" className="text-gray-600 hover:text-blue-500 mr-4">
                 Privacy Policy
               </a>
@@ -253,6 +313,24 @@ const Footer = () => {
                 </div>
               </button>
             </div>
+            <button className="relative md:hidden justify-center items-center flex">
+              <select className="appearance-none bg-transparent border-none py-2 px-4 -ml-8 mr-7 text-gray-600 focus:outline-none">
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                {/* Add more language options */}
+              </select>
+              <div className="absolute inset-y-0 right-0 flex items-center px-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 16.057v-3.057h2.994c-.059 1.143-.212 2.24-.456 3.279-.823-.12-1.674-.188-2.538-.222zm1.957 2.162c-.499 1.33-1.159 2.497-1.957 3.456v-3.62c.666.028 1.319.081 1.957.164zm-1.957-7.219v-3.015c.868-.034 1.721-.103 2.548-.224.238 1.027.389 2.111.446 3.239h-2.994zm0-5.014v-3.661c.806.969 1.471 2.15 1.971 3.496-.642.084-1.3.137-1.971.165zm2.703-3.267c1.237.496 2.354 1.228 3.29 2.146-.642.234-1.311.442-2.019.607-.344-.992-.775-1.91-1.271-2.753zm-7.241 13.56c-.244-1.039-.398-2.136-.456-3.279h2.994v3.057c-.865.034-1.714.102-2.538.222zm2.538 1.776v3.62c-.798-.959-1.458-2.126-1.957-3.456.638-.083 1.291-.136 1.957-.164zm-2.994-7.055c.057-1.128.207-2.212.446-3.239.827.121 1.68.19 2.548.224v3.015h-2.994zm1.024-5.179c.5-1.346 1.165-2.527 1.97-3.496v3.661c-.671-.028-1.329-.081-1.97-.165zm-2.005-.35c-.708-.165-1.377-.373-2.018-.607.937-.918 2.053-1.65 3.29-2.146-.496.844-.927 1.762-1.272 2.753zm-.549 1.918c-.264 1.151-.434 2.36-.492 3.611h-3.933c.165-1.658.739-3.197 1.617-4.518.88.361 1.816.67 2.808.907zm.009 9.262c-.988.236-1.92.542-2.797.9-.89-1.328-1.471-2.879-1.637-4.551h3.934c.058 1.265.231 2.488.5 3.651zm.553 1.917c.342.976.768 1.881 1.257 2.712-1.223-.49-2.326-1.211-3.256-2.115.636-.229 1.299-.435 1.999-.597zm9.924 0c.7.163 1.362.367 1.999.597-.931.903-2.034 1.625-3.257 2.116.489-.832.915-1.737 1.258-2.713zm.553-1.917c.27-1.163.442-2.386.501-3.651h3.934c-.167 1.672-.748 3.223-1.638 4.551-.877-.358-1.81-.664-2.797-.9zm.501-5.651c-.058-1.251-.229-2.46-.492-3.611.992-.237 1.929-.546 2.809-.907.877 1.321 1.451 2.86 1.616 4.518h-3.933z" />
+                </svg>
+              </div>
+            </button>
           </div>
         </div>
       </div>

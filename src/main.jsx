@@ -9,10 +9,10 @@ import Pricing from './component/Pricing.jsx';
 import Blog from './component/Blog.jsx';
 import Company from './component/Company.jsx';
 import Contact_Us from './component/Contact_Us.jsx';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import Landing from './component/Landing.jsx';
 
-const router=createBrowserRouter([
+const router=createHashRouter([
   {
     path:'/',
     element:<Layout />,

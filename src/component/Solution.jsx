@@ -546,7 +546,7 @@ const Home = () => {
         "Accurate search, match, and analysis capabilities are built on the foundation of rich and full applicant and job data.",
       icon: (
         <svg
-          className="fill-purple-500"
+          className="fill-violet-500"
           xmlns="http://www.w3.org/2000/svg"
           width="30"
           height="30"
@@ -562,7 +562,7 @@ const Home = () => {
         "Using automated data extraction, you may improve recruitment accuracy, reduce data entry mistakes, and standardize input.",
       icon: (
         <svg
-          className="fill-purple-500"
+          className="fill-violet-500"
           xmlns="http://www.w3.org/2000/svg"
           width="30"
           height="30"
@@ -589,6 +589,11 @@ const Home = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center space-y-7 py-10 md:py-20 lg:py-30">
+        <div className='flex  justify-center items-center mb-10 font-semibold'>
+          <button className='text-violet-700 select-none cursor-default px-4 py-2 rounded-full bg-gray-200'>
+            Cv Parsing
+          </button>
+        </div>
         <h1 className="text-4xl md:text-5xl mx-5 lg:text-6xl text-center  font-bold">
           AI Resume Parsing Top of the World
         </h1>
@@ -601,14 +606,19 @@ const Home = () => {
             <LottieAnimation />
           </div>
           <div className="lg:h-1/3">
-          <img src={img1} alt="" />
+            <img src={img1} alt="" />
           </div>
         </div>
-        <button className="bg-purple-700 text-white font-medium rounded-lg px-6 py-4">
+        <button className="bg-violet-700 border-violet-700 border hover:shadow-gray-400 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200  hover:shadow-lg flex space-x-3 justify-center items-center text-white font-semibold py-3 px-6 rounded-md transition-all duration-150">
           Test Your Resume Now
         </button>
       </div>
       <div className="h-auto mx-auto to-white fill-gray-50 md:w-full mt-10 px-4 py-8">
+        <div className='flex  justify-center items-center mb-10 font-semibold'>
+          <button className='text-violet-700 select-none cursor-default px-4 py-2 rounded-full bg-gray-200'>
+            Competitor Analysis
+          </button>
+        </div>
         <div className="flex justify-center items-center text-4xl font-semibold pb-8">
           Superior Accuracy
         </div>
@@ -825,6 +835,11 @@ const Home = () => {
         </div>
       </div>
       <div className="container mx-auto mt-20">
+        <div className='flex  justify-center items-center mb-10 font-semibold'>
+          <button className='text-violet-700 select-none cursor-default px-4 py-2 rounded-full bg-gray-200'>
+            Pricing
+          </button>
+        </div>
         <h1 className="text-3xl font-bold text-center mb-6">
           CHOOSE YOUR PLAN
         </h1>
@@ -862,7 +877,7 @@ const Home = () => {
                   </li>
                 ))}
 
-                <button className="bg-gray-200 hover:bg-purple-700 text-purple-700 hover:text-white font-semibold py-2 px-4 w-full transition-all duration-150">
+                <button className="bg-gray-200 hover:bg-violet-700 text-violet-700 hover:text-white font-semibold py-2 px-4 w-full transition-all duration-150">
                   {plan.buttonLabel}
                 </button>
               </ul>
@@ -871,6 +886,11 @@ const Home = () => {
         </div>
       </div>
       <div className="container mx-auto mt-20 px-4 py-8">
+        <div className='flex  justify-center items-center mb-10 font-semibold'>
+          <button className='text-violet-700 select-none cursor-default px-4 py-2 rounded-full bg-gray-200'>
+            Benefits
+          </button>
+        </div>
         <h2 className="text-3xl font-bold text-center mb-4">
           Parsing benefits
         </h2>
@@ -1090,92 +1110,6 @@ const Home = () => {
               Information security is at our core and we are ISO 27001
               certified.
             </p>
-          </div>
-        </div>
-      </div>
-      <div className="container mx-auto px-4 py-16">
-        <div className="bg-gradient-to-r from-gray-50 via-purple-100 to-purple-200 px-4 py-7 h-auto mb-10 rounded-md flex flex-col items-center justify-center">
-          <div className="flex flex-col justify-center items-center w-full gap-y-8">
-            <h1 className=" text-5xl font-semibold text-center mb-4">
-              Get started your project!
-            </h1>
-            <p className="text-gray-400 text-md font-medium text-center mb-8">
-              We will help you grow towards your archivements
-            </p>
-          </div>
-          <div className="flex justify-center gap-6 mb-8">
-            <button className="bg-purple-700 hover:bg-purple-500 hover:shadow-lg text-white font-bold py-2 px-4 rounded-md transition-all duration-150">
-              Try ASVA AI
-            </button>
-            <a href="https://calendly.com/v-inaniyan12/30min">
-              <button className="border-purple-700 border-2 hover:shadow-lg bg-white hover:bg-purple-500 hover:text-white font-bold flex justify-center transition-all duration-150 items-center text-purple-700 py-2 px-4 rounded-md">
-                Book Free Consultation
-              </button>
-            </a>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 fill-gray-500 text-gray-500 md:grid-cols-3 gap-4">
-          <div className="bg-gray-100 select-none flex justify-center items-center rounded-lg shadow-md px-6 py-3">
-            <div className="flex items-cente justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="inherit"
-                class="icon icon-tabler icons-tabler-filled icon-tabler-shield"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M11.884 2.007l.114 -.007l.118 .007l.059 .008l.061 .013l.111 .034a.993 .993 0 0 1 .217 .112l.104 .082l.255 .218a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.531 -2.527l.263 -.225l.096 -.075a.993 .993 0 0 1 .217 -.112l.112 -.034a.97 .97 0 0 1 .119 -.021z" />
-              </svg>
-              <h2 className="text-xl font-bold ml-2">Advanced Security</h2>
-            </div>
-          </div>
-          <div className="bg-gray-100 select-none  flex justify-center items-center rounded-lg shadow-md px-6 py-3">
-            <div className="flex fill-purple-700 items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-clock-24"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 12a9 9 0 0 0 5.998 8.485m12.002 -8.485a9 9 0 1 0 -18 0" />
-                <path d="M12 7v5" />
-                <path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
-                <path d="M18 15v2a1 1 0 0 0 1 1h1" />
-                <path d="M21 15v6" />
-              </svg>
-              <h2 className="text-xl font-bold ml-2">24/7 Support</h2>
-            </div>
-          </div>
-          <div className="bg-gray-100 fill-purple-700 select-none  flex justify-center items-center rounded-lg shadow-md px-6 py-3">
-            <div className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-files"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M15 3v4a1 1 0 0 0 1 1h4" />
-                <path d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z" />
-                <path d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" />
-              </svg>
-              <h2 className="text-xl font-bold ml-2">More than 1000+ models</h2>
-            </div>
           </div>
         </div>
       </div>
