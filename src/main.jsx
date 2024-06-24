@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import Home from './component/Solution.jsx'
 import Layout from './component/Layout.jsx';
-import Platform from './component/Platform.jsx';
 import Solution from './component/Solution.jsx';
 import Pricing from './component/Pricing.jsx';
 import Blog from './component/Blog.jsx';
-import Company from './component/Company.jsx';
 import Contact_Us from './component/Contact_Us.jsx';
 import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import Landing from './component/Landing.jsx';
@@ -22,10 +20,6 @@ const router=createHashRouter([
         element:<Landing />,
       },
       {
-        path:'platform',
-        element:<Platform />,
-      },
-      {
         path:'solution',
         element:<Solution />
       },
@@ -36,10 +30,6 @@ const router=createHashRouter([
       {
         path:'blog',
         element:<Blog />
-      },
-      {
-        path:'company',
-        element:<Company />
       },
       {
         path:'contact_us',

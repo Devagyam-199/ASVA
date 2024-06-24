@@ -587,7 +587,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className="container mx-auto">
       <div className="flex flex-col justify-center items-center space-y-7 py-10 md:py-20 lg:py-30">
         <div className='flex  justify-center items-center mb-10 font-semibold'>
           <button className='text-violet-700 select-none cursor-default px-4 py-2 rounded-full bg-gray-200'>
@@ -1113,7 +1113,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
+
+const testimonial= useRef(null)
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth'
+    });
+  };
+
+
   return (
     <footer className="container sticky mx-auto mt-10 bg-white">
       <div className=" mx-auto px-5">
@@ -110,7 +122,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=" flex mx-auto flex-col space-y-5 pb-3">
-            <a href="/" className="text-xl md:ml-28 ml-24 mx-1 flex justify-center select-none font-bold">
+            <NavLink to="/" className="text-xl md:ml-28 ml-24 mx-1 flex justify-center select-none font-bold" >
               <svg
                 className="cursor-pointer"
                 width="298"
@@ -151,7 +163,7 @@ const Footer = () => {
                   fill="#3C245B"
                 />
               </svg>
-            </a>
+            </NavLink>
             <div className="flex md:flex-row flex-col justify-between">
               <div className="text-start mb-7">
 
@@ -227,59 +239,51 @@ const Footer = () => {
                       </linearGradient>
                     </defs>
                   </svg>
-
                 </a>
               </div>
             </div>
 
           </div>
         </>
-        <div className="container bg-white py-10 ">
-          <div className="grid grid-cols-3 md:grid-cols-6 border-b border-b-gray-200 mx-auto">
+        <div className="container mx-auto bg-white py-10 ">
+          <div className="grid grid-cols-3 md:grid-cols-6 border-b border-b-gray-200 ">
             <div className="px-4 w-1/4 mb-6">
               <h3 className="text-lg font-bold mb-4">General</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <a href="#">Product</a>
-                <a href="#">Testimonial</a>
-                <a href="#">Contact us</a>
-                <a href="#">Links</a>
+                <NavLink to="/solution">Product</NavLink>
+                <Link to="/" onClick={()=>scrollToSection(testimonial)}>Testimonial</Link>
+                <NavLink to="/contact_us">Contact us</NavLink>
+                <NavLink to="/solution">Links</NavLink>
               </ul>
             </div>
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Product</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
                 <a href="#">Interface</a>
-                <a href="#">Fine-tuning</a>
-                <a href="#">Hosting</a>
-                <a href="#">Monitoring</a>
+                <NavLink to="/">Fine-tuning</NavLink>
+                <NavLink to="/">Hosting</NavLink>
+                <NavLink to="/">Monitoring</NavLink>
               </ul>
             </div>
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Pricing</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <a href="#">Fine-tuning Costs</a>
-                <a href="#">Dedicated Dep...</a>
-                <a href="#">Asva Tiers</a>
+                <NavLink to="/pricing">Fine-tuning Costs</NavLink>
+                <NavLink to="/pricing">Dedicated Dep...</NavLink>
+                <NavLink to="/pricing">Asva Tiers</NavLink>
               </ul>
             </div>
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Blogs</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <a href="#">Case studies</a>
-                <a href="#">Use cases</a>
-              </ul>
-            </div>
-            <div className="px-4 mb-6">
-              <h3 className="text-lg font-bold mb-4">Company</h3>
-              <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <a href="#">Story</a>
-                <a href="#">Hiring</a>
+                <NavLink to="/blog">Case studies</NavLink>
+                <NavLink to="/blog">Use cases</NavLink>
               </ul>
             </div>
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Contact Us</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <a href="#">Email</a>
+                <NavLink to="/contact_us">Email</NavLink>
               </ul>
             </div>
           </div>
@@ -334,7 +338,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 

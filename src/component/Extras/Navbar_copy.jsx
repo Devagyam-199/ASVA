@@ -55,9 +55,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden text-lg text-gray-400 font-medium md:-ml-20 md:flex space-x-10">
-          <NavLink to="/platform" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
-            Platform
-          </NavLink>
+          
           <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Solution
           </NavLink>
@@ -66,9 +64,6 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/blog" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Blog
-          </NavLink>
-          <NavLink to="/company" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
-            Company
           </NavLink>
           <NavLink to="/contact_us" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Contact Us
@@ -109,22 +104,17 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg px-4 py-3">
           <div className="flex flex-col justify-center items-center space-y-4">
-            <NavLink to="/platform" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
-              Platform
-            </NavLink>
-            <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
+            
+            <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Solution
             </NavLink>
-            <NavLink to="/pricing" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
+            <NavLink to="/pricing" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Pricing
             </NavLink>
-            <NavLink to="/blog" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
+            <NavLink to="/blog" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Blog
             </NavLink>
-            <NavLink to="/company" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
-              Company
-            </NavLink>
-            <NavLink to="/contact_us" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
+            <NavLink to="/contact_us" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Contact Us
             </NavLink>
           </div>

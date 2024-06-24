@@ -150,35 +150,6 @@ function Contact() {
           <div className='flex items-center gap-x-4'>
             <div className='bg-gray-100 rounded-full px-3 py-3'>
               <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1_2820)">
-                  <path d="M22.75 18.2883V22.119C22.7501 22.3933 22.6462 22.6574 22.4592 22.858C22.2722 23.0587 22.0161 23.181 21.7425 23.2002C21.2691 23.2327 20.8823 23.25 20.5833 23.25C11.0099 23.25 3.25 15.4901 3.25 5.91667C3.25 5.61767 3.26625 5.23092 3.29983 4.7575C3.31903 4.4839 3.4413 4.22776 3.64195 4.04078C3.84261 3.85379 4.10672 3.74988 4.381 3.75H8.21167C8.34604 3.74986 8.47567 3.79968 8.57537 3.88977C8.67507 3.97986 8.73773 4.1038 8.75117 4.2375C8.77608 4.48667 8.79883 4.68492 8.8205 4.8355C9.0358 6.338 9.477 7.79932 10.1292 9.16992C10.2321 9.38658 10.1649 9.6455 9.96992 9.78417L7.63208 11.4547C9.06149 14.7853 11.7158 17.4396 15.0464 18.869L16.7148 16.5355C16.7829 16.4402 16.8824 16.3718 16.9959 16.3423C17.1093 16.3128 17.2295 16.324 17.3355 16.3741C18.7059 17.025 20.1669 17.4651 21.6688 17.6795C21.8194 17.7012 22.0177 17.725 22.2647 17.7488C22.3982 17.7625 22.5218 17.8253 22.6117 17.925C22.7016 18.0246 22.7502 18.1541 22.75 18.2883Z" fill="url(#paint0_linear_1_2820)" />
-                </g>
-                <defs>
-                  <linearGradient id="paint0_linear_1_2820" x1="7.90447" y1="3.75" x2="26.4169" y2="8.69244" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#6322D8" />
-                    <stop offset="1" stop-color="#E0CEFF" />
-                  </linearGradient>
-                  <clipPath id="clip0_1_2820">
-                    <rect width="26" height="26" fill="white" transform="translate(0 0.5)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <div className='flex flex-col gap-y-1'>
-              <h2 className="text-xl text-violet-700">Phone</h2>
-              <p className="text-gray-700">+91 00000 00000</p>
-              <a href="tel:+91 00000 00000">
-                <button
-                  className="bg-gray-100 text-violet-700 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200 hover:text-white py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition-all duration-150"
-                >
-                  Call Us
-                </button>
-              </a>
-            </div>
-          </div>
-          <div className='flex items-center gap-x-4'>
-            <div className='bg-gray-100 rounded-full px-3 py-3'>
-              <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1_2832)">
                   <path d="M3.25033 3.75H22.7503C23.0376 3.75 23.3132 3.86414 23.5164 4.0673C23.7195 4.27047 23.8337 4.54602 23.8337 4.83333V22.1667C23.8337 22.454 23.7195 22.7295 23.5164 22.9327C23.3132 23.1359 23.0376 23.25 22.7503 23.25H3.25033C2.96301 23.25 2.68746 23.1359 2.48429 22.9327C2.28113 22.7295 2.16699 22.454 2.16699 22.1667V4.83333C2.16699 4.54602 2.28113 4.27047 2.48429 4.0673C2.68746 3.86414 2.96301 3.75 3.25033 3.75ZM13.0653 13.1566L6.11899 7.25783L4.71608 8.90883L13.0794 16.0101L21.2922 8.90342L19.8752 7.26433L13.0653 13.1566Z" fill="url(#paint0_linear_1_2832)" />
                 </g>
@@ -196,7 +167,7 @@ function Contact() {
             </div>
             <div className='flex flex-col gap-y-1'>
               <h2 className="text-xl text-violet-700">Email</h2>
-              <p className="text-gray-700">Asvaai@gmail.com</p>
+              <p className="text-gray-700 mb-2">Asvaai@gmail.com</p>
               <a href="mailto:Asvaai@gmail.com">
                 <button
                   className="bg-gray-100 text-violet-700 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200 hover:text-white py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition-all duration-150"
