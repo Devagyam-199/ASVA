@@ -41,7 +41,7 @@ const router=createHashRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className="h-screen w-full font-titillium_web no-scrollbar">
+    <div className="h-screen w-full overflow-y-scroll font-titillium_web no-scrollbar">
       <RouterProvider router={router}/>
     </div>
   

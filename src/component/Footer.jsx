@@ -251,7 +251,7 @@ const testimonial= useRef(null)
               <h3 className="text-lg font-bold mb-4">General</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
                 <NavLink to="/solution">Product</NavLink>
-                <Link to="/" onClick={()=>scrollToSection(testimonial)}>Testimonial</Link>
+                <Link to="/">Testimonial</Link>
                 <NavLink to="/contact_us">Contact us</NavLink>
                 <NavLink to="/solution">Links</NavLink>
               </ul>
