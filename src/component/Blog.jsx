@@ -1,4 +1,13 @@
 import { useState } from 'react';
+import blog1 from './Images/blog1.jpeg'
+import blog2 from './Images/blog2.jpeg'
+import blog3 from './Images/blog3.jpeg'
+import blog4 from './Images/blog4.jpeg'
+import blog5 from './Images/blog5.jpeg'
+import blog6 from './Images/blog6.jpeg'
+import blog7 from './Images/blog7.jpeg'
+import blog8 from './Images/blog8.jpeg'
+import blog9 from './Images/blog9.jpeg'
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -19,67 +28,85 @@ const Blog = () => {
       setEmail('');
     }
   };
-  
+
 
   const blogPosts = [
 
     {
-      author: 'Olivia Rhye',
-      date: '20 Jan 2022',
-      title: 'How do you test and optimize your presentations?',
-      description: 'How do you create compelling presentations that wow your colleagues and impress your managers?',
+      author: 'Vats Shah',
+      date: 'July 3, 2024',
+      title: `How ASVA AI'S CV Parsing helps hiring decisions`,
+      description: 'Empowering Data-Driven Recruitment: The ASVA AI CV Parsing Advantage.',
+      imgurl: blog1,
+      href: "https://www.linkedin.com/pulse/empowering-data-driven-recruitment-asva-ai-cv-parsing-advantage-zxq0c/?trackingId=jvoCm0LFRauxXxA4rRFFjg%3D%3D"
     },
     {
-      author: 'Phoenix Baker',
-      date: '19 Jan 2022',
-      title: 'Optimize Page for ATS',
-      description: 'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here\'s how to get...',
+      author: 'Vats Shah',
+      date: 'July 3, 2024',
+      title: 'Enhancing Candidate CV Parsing with ASVA AI',
+      description: 'Elevating the Candidate Experience: The Hidden Power of Efficient CV Parsing.',
+      imgurl: blog2,
+      href: "https://www.linkedin.com/pulse/enhancing-candidate-experience-efficient-cv-parsing-asva-ai-pbfdc/?trackingId=Bvz05b6ZTtqcHWgKccIQVQ%3D%3D"
     },
     {
-      author: 'Lana Steiner',
-      date: '18 Jan 2022',
-      title: 'Optimize Page for ATS',
-      description: 'The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing.',
+      author: 'Vats Shah',
+      date: 'July 3, 2024',
+      title: 'The cost effectiveness of ASVA AI’s CV Parsing',
+      description: 'The Cost_Effectiveness of Implementing CV Parsing.',
+      imgurl: blog3,
+      href: "https://www.linkedin.com/pulse/cost-effectiveness-implementing-cv-parsing-your-recruitment-process-wrhkf/?trackingId=QivwHKNLRUOCuYL5%2FpbBEA%3D%3D "
     },
 
   ];
 
   const mainPosts = [
     {
-      author: 'Alec Whitten',
-      date: '17 Jan 2022',
-      title: 'features of different ATS platforms',
-      description: 'Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?',
+      author: 'Vats Shah',
+      date: 'July 2, 2024',
+      title: 'ATS Integrating to CV Parsing  ',
+      description: 'Your Applicant Tracking System(ATS) is the backbone of your operations.',
+      imgurl: blog4,
+      href: "https://www.linkedin.com/pulse/integrating-cv-parsing-your-existing-ats-applicant-tracking-system-3wnof/?trackingId=5oqrStgHTQmNkIgrheWiUw%3D%3D "
     },
     {
-      author: 'Demi WIlkinson',
-      date: '16 Jan 2022',
-      title: 'optimize page for ATS',
-      description: 'Mental models are simple expressions of complex processes or relationships.',
+      author: 'Vats Shah',
+      date: 'July 1, 2024',
+      title: 'The role of machine learning in CV Parsing',
+      description: 'Improving diversity and inclusion through unbiased CV Parsing.',
+      imgurl: blog5,
+      href: "https://www.linkedin.com/pulse/revolutionizing-recruitment-how-machine-learning-transforming-l1xdf/?trackingId=yVzzA8J0SCOnVXbXx%2FvFMw%3D%3D "
     },
     {
-      author: 'Candice Wu',
-      date: '15 Jan 2022',
-      title: 'Optimize Page for ATS',
-      description: 'Introduction to Wireframing and its Principles. Learn from the best in the industry.',
+      author: 'Vats Shah',
+      date: 'July 1, 2024',
+      title: 'Improving diversity through CV Parsing',
+      description: 'Improving diversity and inclusion through unbiased CV Parsing.',
+      imgurl: blog6,
+      href: "https://www.linkedin.com/pulse/improving-diversity-inclusion-through-unbiased-cv-parsing-asva-ai-pgv9f/?trackingId=JsOL3C8LQGqm66FigkDRlQ%3D%3D "
     },
     {
-      author: 'Natali Craig',
-      date: '14 Jan 2022',
-      title: 'Optimize Page for ATS',
-      description: 'Collaboration can make our teams stronger, and our individual designs better.',
+      author: 'Vats Shah',
+      date: 'June 30, 2024',
+      title: 'Top benefits of using CV Parsing',
+      description: 'The top benefits of implementing this technology in your HR department.',
+      imgurl: blog7,
+      href: "https://www.linkedin.com/pulse/top-benefits-using-cv-parsing-software-hr-departments-asva-ai-kvf6f/?trackingId=Jy32iU8QS9GeuXTfWxyztg%3D%3D "
     },
     {
-      author: 'Drew Cano',
-      date: '13 Jan 2022',
-      title: 'Optimize Page for ATS',
-      description: 'JavaScript frameworks make development easy with extensive features and functionalities.',
+      author: 'Vats Shah',
+      date: 'June 29, 2024',
+      title: 'How AI is revolutionising recruitment processes',
+      description: 'Let\'s explore the key ways AI is revolutionizing recruitment.',
+      imgurl: blog8,
+      href: "https://www.linkedin.com/pulse/how-ai-revolutionizing-recruitment-process-asva-ai-o6xaf/?trackingId=phUv1wsCSl6iM3TsvP6fiA%3D%3D "
     },
     {
-      author: 'Orlando Diggs',
-      date: '12 Jan 2022',
-      title: 'Optimize Page for ATS',
-      description: `Starting a community doesn't need to be complicated, but how do you get started?`,
+      author: 'Vats Shah',
+      date: 'June 29, 2024',
+      title: 'The evolution of CV Parsing',
+      description: `The heart of this evolution lies in CV Parsing technology.`,
+      imgurl: blog9,
+      href: "https://www.linkedin.com/feed/update/urn:li:share:7212673897626820609/?actorCompanyId=101984708"
     }
   ]
 
@@ -96,7 +123,7 @@ const Blog = () => {
     : mainPosts;
 
   return (
-    <>
+    <div id='blog'>
       <div className="container mx-auto p-4">
         <div className='flex md:flex-row flex-col items-center md:items-start w-full'>
           <div className='p-8 bg-white flex flex-col gap-y-3 md:w-1/3'>
@@ -142,14 +169,16 @@ const Blog = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {filteredPosts.map((post, index) => (
                   <div key={index} className="rounded-md p-4 ">
-                    <div className='bg-gray-100 h-52 mb-4'>
-
-                    </div>
-                    <div className="text-sm text-violet-700 font-semibold mb-2">
-                      {post.author} · {post.date}
-                    </div>
-                    <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-                    <p className=' text-sm text-gray-400'>{post.description}</p>
+                    <a href={post.href}>
+                      <div className=' mb-4'>
+                        <img src={post.imgurl} alt="image" />
+                      </div>
+                      <div className="text-sm text-violet-700 font-semibold mb-2">
+                        {post.author} · {post.date}
+                      </div>
+                      <h2 className="text-xl font-bold mb-2">{post.title}</h2>
+                      <p className=' text-sm text-gray-400'>{post.description}</p>
+                    </a>
                   </div>
                 ))}
               </div>
@@ -157,7 +186,7 @@ const Blog = () => {
           </div>
         </div>
         <div className='flex md:flex-row flex-col items-center md:items-start w-full'>
-          <div className=' bg-white flex flex-col gap-y-3 p-8 md:w-1/2'>
+          <div className=' bg-white flex flex-col gap-y-3 p-8 md:w-5/6'>
             <h1 className="text-3xl font-bold text-start mb-8">Subscribe to our Newsletter</h1>
             <form onSubmit={handleSubmit} className="flex flex-col w-full gap-4">
               <div className="flex flex-col gap-4">
@@ -188,7 +217,7 @@ const Blog = () => {
                 id="email"
                 className=" appearance-none border w-full py-3 px-3 mb-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 value={email}
-                onChange={(event) => setEmail(event.target.value)}
+                onChange={(event) => setEmail(event.target.value)} F
               />
               {error && <div className="text-red-500">{error}</div>}
               <button
@@ -205,14 +234,16 @@ const Blog = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {mainfilteredPosts.map((post, index) => (
                   <div key={index} className="rounded-md p-4 ">
-                    <div className='bg-gray-100 h-52 mb-4'>
-
-                    </div>
-                    <div className="text-sm text-violet-700 font-semibold mb-2">
-                      {post.author} · {post.date}
-                    </div>
-                    <h2 className="text-lg font-bold mb-2">{post.title}</h2>
-                    <p>{post.description}</p>
+                    <a href={post.href}>
+                      <div className='mb-4'>
+                        <img src={post.imgurl} alt="" />
+                      </div>
+                      <div className="text-sm text-violet-700 font-semibold mb-2">
+                        {post.author} · {post.date}
+                      </div>
+                      <h2 className="text-lg font-bold mb-2">{post.title}</h2>
+                      <p>{post.description}</p>
+                    </a>
                   </div>
                 ))}
               </div>
@@ -222,7 +253,7 @@ const Blog = () => {
       </div>
 
 
-    </>
+    </div>
   );
 }
 

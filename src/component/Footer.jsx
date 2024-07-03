@@ -1,17 +1,9 @@
 import React, { useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const Footer = () => {
-
-const testimonial= useRef(null)
-
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: 'smooth'
-    });
-  };
-
 
   return (
     <footer className="container sticky mx-auto mt-10 bg-white">
@@ -89,7 +81,7 @@ const testimonial= useRef(null)
                   <h2 className="text-lg font-semibold">24/7 Support</h2>
                 </div>
               </div>
-              <div className="bg-gray-100 fill-purple-700 select-none  flex justify-center items-center rounded-lg shadow-md px-6 py-3">
+              <div className="bg-gray-100 fill-violet-700 select-none  flex justify-center items-center rounded-lg shadow-md px-6 py-3">
                 <div className="flex items-center">
                   <svg width="45" height="45" viewBox="0 2 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="15.166" y="14.9395" width="14" height="17" rx="2" stroke="url(#paint0_linear_73_2099)" stroke-width="2" />
@@ -122,7 +114,7 @@ const testimonial= useRef(null)
             </div>
           </div>
           <div className=" flex mx-auto flex-col space-y-5 pb-3">
-            <NavLink to="/" className="text-xl md:ml-28 ml-24 mx-1 flex justify-center select-none font-bold" >
+            <Link to="/" className="text-xl md:ml-28 ml-24 mx-1 flex justify-center select-none font-bold" >
               <svg
                 className="cursor-pointer"
                 width="298"
@@ -163,7 +155,7 @@ const testimonial= useRef(null)
                   fill="#3C245B"
                 />
               </svg>
-            </NavLink>
+            </Link>
             <div className="flex md:flex-row flex-col justify-between">
               <div className="text-start mb-7">
 
@@ -245,45 +237,50 @@ const testimonial= useRef(null)
 
           </div>
         </>
+
         <div className="container mx-auto bg-white py-10 ">
-          <div className="grid grid-cols-3 md:grid-cols-6 border-b border-b-gray-200 ">
+          <div className="grid grid-cols-3 md:grid-cols-6 border-b border-gray-200">
             <div className="px-4 w-1/4 mb-6">
               <h3 className="text-lg font-bold mb-4">General</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <NavLink to="/solution">Product</NavLink>
+                <Link to="/solution">Product</Link>
                 <Link to="/">Testimonial</Link>
-                <NavLink to="/contact_us">Contact us</NavLink>
-                <NavLink to="/solution">Links</NavLink>
+                <Link to="/contact_us">Contact us</Link>
+                <Link to="/solution">Links</Link>
               </ul>
             </div>
+
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Product</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <a href="#">Interface</a>
-                <NavLink to="/">Fine-tuning</NavLink>
-                <NavLink to="/">Hosting</NavLink>
-                <NavLink to="/">Monitoring</NavLink>
+                <Link to="/">Interface</Link>
+                <Link to="/">Fine-tuning</Link>
+                <Link to="/">Hosting</Link>
+                <Link to="/">Monitoring</Link>
               </ul>
             </div>
+
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Pricing</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <NavLink to="/pricing">Fine-tuning Costs</NavLink>
-                <NavLink to="/pricing">Dedicated Dep...</NavLink>
-                <NavLink to="/pricing">Asva Tiers</NavLink>
+                <Link to="/pricing">Fine-tuning Costs</Link>
+                <Link to="/pricing">Dedicated Dep...</Link>
+                <Link to="/pricing">Asva Tiers</Link>
               </ul>
             </div>
+
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Blogs</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <NavLink to="/blog">Case studies</NavLink>
-                <NavLink to="/blog">Use cases</NavLink>
+                <Link to="/blog">Case studies</Link>
+                <Link to="/blog">Use cases</Link>
               </ul>
             </div>
+
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Contact Us</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <NavLink to="/contact_us">Email</NavLink>
+                <Link to="/contact_us">Email</Link>
               </ul>
             </div>
           </div>

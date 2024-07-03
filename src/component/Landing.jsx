@@ -167,7 +167,7 @@ const Landing = () => {
 
 
     return (
-        <div className='w-screen overflow-hidden'>
+        <div id='/' className='w-screen overflow-hidden'>
             <div className='container mx-auto mt-20'>
                 <div className='flex mx-5 justify-center h-auto gap-x-3 items-center mb-20'>
                     <div className='flex flex-col gap-y-9 items-start w-full md:w-1/2 h-full'>
@@ -297,7 +297,7 @@ const Landing = () => {
             </div >
 
             <div className='container mx-auto mt-20'>
-                <div className="bg-gradient-to-r from-gray-50 via-purple-100 to-purple-200 px-4 py-7 h-auto mb-10 rounded-md flex flex-col items-center justify-center">
+                <div className="bg-gradient-to-r from-gray-50 via-violet-100 to-violet-200 px-4 py-7 h-auto mb-10 rounded-md flex flex-col items-center justify-center">
                     <div className="flex flex-col justify-center items-center w-full gap-y-8">
                         <h1 className=" text-5xl font-semibold text-center mb-4">
                             Get started your project!
@@ -426,7 +426,7 @@ const Landing = () => {
                     }} {...settings}>
                         {slides.map((slide, index) => (
 
-                            <div key={index} className={`bg-white flex flex-col justify-center ${index === currentSlide ? "bg-purple-700" : ""
+                            <div key={index} className={`bg-white flex flex-col justify-center ${index === currentSlide ? "bg-violet-700" : ""
                                 } items-center border w-5/6 border-gray-100 rounded-lg p-8`}>
                                 <p className="text-gray-600 mb-4">
                                     {slide.review}

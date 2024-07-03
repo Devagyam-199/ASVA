@@ -7,6 +7,13 @@ const Navbar = () => {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+  const handleLogin=()=>{
+    alert("You do not have Admin Authorities")
+  }
+
+  const handleSign=()=>{
+    alert("Currently Under Developement")
+  }
 
   return (
     <nav className="bg-white shadow-lg">
@@ -62,6 +69,7 @@ const Navbar = () => {
           <NavLink to="/pricing" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Pricing
           </NavLink>
+          
           <NavLink to="/blog" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Blog
           </NavLink>
@@ -72,12 +80,14 @@ const Navbar = () => {
         <div className="hidden md:flex md:justify-center md:items-center space-x-4">
           <Link
             to="#"
-            className="md:flex md:justify-center md:items-center hover:bg-violet-700 hover:text-white text-violet-300 border border-violet-700 h-10 font-medium py-6 px-8 rounded-md transition-all duration-150"
+            onClick={handleLogin}
+            className="md:flex md:justify-center md:items-center hover:bg-violet-700 hover:text-white text-violet-500 border border-violet-700 h-10 font-medium py-6 px-8 rounded-md transition-all duration-150"
           >
             Login
           </Link>
           <Link
             to="#"
+            onClick={handleSign}
             className="md:flex md:justify-center md:items-center bg-violet-700 hover:bg-violet-500 text-white font-medium py-6 h-10 px-8 rounded-md transition-all duration-150"
           >
             Signup
@@ -121,12 +131,14 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4 mt-5 justify-center items-center">
             <Link
               to="#"
+              onClick={handleLogin}
               className="flex justify-center items-center hover:bg-violet-700 hover:text-white text-violet-500 border-2 border-violet-700 h-10 font-medium py-2 px-8 rounded-md transition-all duration-150"
             >
               Login
             </Link>
             <Link
               to="#"
+              onClick={handleSign}
               className="flex justify-center items-center bg-violet-700 hover:bg-violet-500 text-white font-medium py-2 h-10 px-8 rounded-md transition-all duration-"
             >
               Signup

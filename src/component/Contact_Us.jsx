@@ -42,7 +42,7 @@ function Contact() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div id='contact_us' className="container mx-auto px-4 py-16">
       <div className='flex justify-center items-center mb-10 font-semibold'>
         <button className='text-violet-700 select-none cursor-default px-4 py-2 rounded-full bg-gray-200'>
           Contact Us

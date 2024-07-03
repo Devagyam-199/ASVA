@@ -1,49 +1,75 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import Home from './component/Solution.jsx'
-import Layout from './component/Layout.jsx';
-import Solution from './component/Solution.jsx';
-import Pricing from './component/Pricing.jsx';
-import Blog from './component/Blog.jsx';
-import Contact_Us from './component/Contact_Us.jsx';
-import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
-import Landing from './component/Landing.jsx';
+import React, { Suspense, useEffect } from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
+import Layout from './component/Layout';
 
-const router=createHashRouter([
+const Landing = React.lazy(() => import('./component/Landing'));
+const Solution = React.lazy(() => import('./component/Solution'));
+const Pricing = React.lazy(() => import('./component/Pricing'));
+const Blog = React.lazy(() => import('./component/Blog'));
+const ContactUs = React.lazy(() => import('./component/Contact_Us'));
+
+
+const router = createHashRouter([
   {
-    path:'/',
-    element:<Layout />,
-    children:[
+    path: '/',
+    element: <Layout />,
+    children: [
       {
-        path:'',
-        element:<Landing />,
+        path: '',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <Landing />
+          </Suspense>
+        ),
       },
       {
-        path:'solution',
-        element:<Solution />
+        path: 'solution',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <Solution />
+          </Suspense>
+        ),
       },
       {
-        path:'pricing',
-        element:<Pricing />
+        path: 'pricing',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <Pricing />
+          </Suspense>
+        ),
       },
       {
-        path:'blog',
-        element:<Blog />
+        path: 'blog',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <Blog />
+          </Suspense>
+        ),
       },
       {
-        path:'contact_us',
-        element:<Contact_Us />
-      }
-    ]
-  }
-])
+        path: 'contact_us',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <ContactUs />
+          </Suspense>
+        ),
+      },
+    ],
+  },
+]);
+
+const App = () => (
+  <RouterProvider router={router}>
+    <Layout/>
+  </RouterProvider>
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className="h-screen w-full overflow-y-scroll font-titillium_web no-scrollbar">
-      <RouterProvider router={router}/>
+     <div className="h-screen w-full overflow-y-scroll font-titillium_web no-scrollbar">
+      <App />
     </div>
-  
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
