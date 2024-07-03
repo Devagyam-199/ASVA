@@ -154,12 +154,11 @@ const Blog = () => {
             <div className="md:flex md:flex-col hidden rounded-md text-start ">
               <h2 className="text-lg font-semibold mb-5">All Blog Posts</h2>
               <ul className='flex flex-col gap-y-5 text-gray-500'>
-                <li>LLM* (Large language Models)</li>
-                <li>Open-source</li>
-                <li>Tutorials</li>
-                <li>Company</li>
-                <li>Thought Leadership</li>
-                <li>Customers</li>
+                {mainfilteredPosts.map((post, index) => (
+                  <a href={post.href}>
+                    <li>{post.title}</li>
+                  </a>
+                ))}
               </ul>
             </div>
           </div>
@@ -250,10 +249,10 @@ const Blog = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div >
 
 
-    </div>
+    </div >
   );
 }
 
